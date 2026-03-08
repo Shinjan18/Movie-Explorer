@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
 
-  const API_KEY = "ac8aa00779b46d7e34e4aa9800f4bd17";
+  const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
   const [movies, setMovies] = useState([]);
   const [category, setCategory] = useState("trending");
